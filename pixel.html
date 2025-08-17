@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">
+    <input id="size"
+     type="number" 
+     min="10" max="100" 
+     value="25" />
+
+    <label for="size">Enter the size of grid (between 10 and 100)</label>
+  </div>
+
+
+  <div class="controls">
+    <button id="gen">Generate Grid</button>
+
+    <span class="swatch">
+      <span id="peep" class="color-peep"></span>
+      <label>Choose pen color</label>
+    </span>
+    <input id="picker" 
+    type="color" 
+    value="#000000" 
+    style="height:0;
+    width:0;
+    opacity:0;
+    position:absolute;
+    pointer-events:none"/>
+
+    
+    <button id="confirm">Confirm</button>
+
+    <button id="eraser">Eraser</button>
+    <button id="clear">Clear Canvas</button>
+  </div>
+
+  <div class="stack">
+    <div class="grid-wrap">
+      <div id="grid" class="grid"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
